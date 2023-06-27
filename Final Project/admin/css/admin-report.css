@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+    background-image: url('../img/sidebarbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar .logo {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .profile-preview {
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+.sidebar .profile-preview img {
+    width: 130px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.sidebar .list-link {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar .list-link ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.sidebar .list-link ul li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sidebar .list-link ul li.active {
+    background: #B5B0B0;
+    border-radius: 20px;
+}
+
+.sidebar .list-link ul li a {
+    text-decoration: none;
+    width: 70%;
+    color: #000000;
+}
+
+.sidebar .list-link ul li a:hover {
+    color: #616161;
+}
+
+.sidebar .list-link ul li i {
+    margin: 0 10px 0 10px;
+}
+
+.sidebar .logout {
+    margin-top: 70px;
+    margin-bottom: 9px;
+}
+
+.sidebar .logout a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar .logout a:hover {
+    color: #616161;
+}
+
+/*report user*/
+.container-main {
+    margin: 0px 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.container-main .report1 {
+    background-color: white;
+    border-radius: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+.container-main .report1 .data-report {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-main .report1 .data-report img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px transparent #000000;
+    margin: 20px;
+}
+
+.container-main .report1 .data-report .nama-report {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.container-main .report1 .data-report .nama-report p{
+    margin-top: -15px;
+}
+
+.container-main .report1 .isi-report {
+    display: flex;
+}
+
+.container-main .report1 .isi-report p {
+    text-align: justify;
+    margin: 10px 20px 20px 20px;
+}

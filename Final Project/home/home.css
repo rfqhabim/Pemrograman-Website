@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bgheader{
+    background-color: black;
+}
+
+header{
+    background-image: url('image/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header p{
+    padding: 20px;
+    font-size: 24px;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding: 0 40px;
+}
+
+.bar .gambar{
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.bar .gambar img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.bar .tombol{
+    display: flex;
+    justify-content: end;
+    float: right;
+    width: 100%;
+    gap: 30px;
+    font-size: 18px;
+    margin: 20px;
+    /* margin-left: 17%; */
+    font-family: 'Inter', sans-serif;
+}
+
+.bar .tombol a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.bar .tombol a:hover{
+    color: #b5b0b0;
+}
+
+.jumbotron img{
+    width: 100%;
+    /* height: 570px; */
+    object-fit: cover; 
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 80px 0;
+}
+
+.aboutus .box1 {
+    width: 50%;
+}
+
+.aboutus .box1 img{
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.aboutus .box2 {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.aboutus .box2 h2{
+    font-family: 'inter', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.aboutus .box2 p{
+    font-family: 'inter', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+
+.product {
+    background-image: url('image/product.png');
+    background-color: black;
+    color: white;
+    text-align: justify;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    padding: 50px;
+}
+
+.product .kalimat_kategori h2{
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding-top: 70px;
+}
+
+.product .kalimat_kategori p{
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 19px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.product .kategori {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+}
+
+.product .kategori img{
+    width: 70%;
+    margin: 20px 20px 20px 20px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.product .kategori img:hover{
+    background-color: black;
+    border-radius: 25px;
+}
+
+.product .view-more{
+    background-color: rgba(181, 176, 176, 0.7);
+    text-align: center;
+    height: 100%;
+    width: 120px;
+    margin: auto;
+    border-radius: 15px;
+    font-family: 'inter', sans-serif;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.product .view-more a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.product .view-more a:hover{
+    color: black;
+}
+
+.report{
+    display: flex;
+    justify-content: center;
+    height: 700px;
+}
+
+.report .box2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: auto;
+    width: 68%;
+    
+}
+
+.report .box2 .box2-1{
+    margin: 70px 70px 80px 70px;
+    width: 40%;
+}
+
+.report .box2 .box2-1 h2{
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.report .box2 .box2-1 p{
+    text-align: justify;
+    font-family: 'inter', sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.report .box2 .box2-2{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin: 20px 70px 0px 0px;
+}
+
+.report .box2 .box2-2 .nama{
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.report .box2 .box2-2 .nama i{
+    margin: 15px;
+}
+
+.report .box2 .box2-2 .nama input{
+    border: none;
+    font-size: 15px;
+    width: 90%;
+    outline: none;
+}
+
+.report .box2 .box2-2 .email{
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 15px;
+    width: 90%;
+}
+
+.report .box2 .box2-2 .email i{
+    margin: 15px;
+}
+
+.report .box2 .box2-2 .email input{
+    border: none;
+    font-size: 15px;
+    width: 90%;
+    outline: none;
+}
+
+.report .box2 .box2-2 .desc{
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 15px;
+    width: 90%;
+    height: 150px;
+}
+
+.report .box2 .box2-2 .desc textarea{
+    border: none;
+    font-size: 15px;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+
+.report .box2 .box2-2 button{
+    width: 90%;
+    margin-left: 12px;
+    background-color: #0C697A;
+    border-style: none;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.report .box2 .box2-2 button:hover{
+    background-color: #b5b0b0;
+    color: black;
+}
+
+.bgfooter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-image: url('image/backgroundfooter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgfooter .box3{
+    display: flex;
+    width: 100%;
+}
+.bgfooter .box3 img{
+    width: 100px;
+    height: auto;
+    margin: 28px;
+    margin-left: 75%;
+}
+
+.bgfooter .box4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+}
+
+.bgfooter .box4 .sosmed{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 5%;
+}
+
+.bgfooter .box4 .sosmed a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.bgfooter .box4 .sosmed a:hover{
+    color: #b5b0b0;
+}
+
+
+footer{
+    padding-right: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+footer p{
+    font-size: 20px;
+}

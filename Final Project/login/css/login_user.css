@@ -1,0 +1,148 @@
+body {
+    background-image: url('../image/background.png');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 900px;
+    height: 420px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 70%;
+    border-radius: 30px;
+}
+.login-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    border-radius: 10px;
+    width: 250px;
+    height: 20px;
+}
+
+.forgot-password {
+    text-align: right;
+    color: blue;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.user-type-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.user-type-container .user-type {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.user-type-container .user-type.user {
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    transition: 0.2s;
+}
+
+.user-type-container .user-type.user:hover {
+    background-color: #540F4D;
+    color: white;
+}
+
+.user-type-container .user-type.admin {
+    /* background-color: rgba(255, 255, 0, 0.5); */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    transition: 0.2s;
+}
+
+.user-type-container .user-type.admin:hover {
+    background-color: #0F5E71;
+    color: white;
+}
+
+.user-type-container .user-type.user.clicked {
+    background-color: #540F4D;
+    color: white;
+}
+
+.user-type-container .user-type.admin.clicked {
+    background-color: #0F5E71;
+    color: white;
+}
+
+.checkbox-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input {
+    margin-right: 5px;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    margin: 10px auto;
+    transition: 0.2s;
+}
+
+.login-button:hover{
+    background-color: #B5B0B0;
+    color: black;
+}
+
+.account-text {
+    text-align: center;
+}
+
+/* Tambahkan gaya untuk menyembunyikan checkbox */
+.hide-checkbox {
+    display: none;
+}
+
+/* Tambahkan gaya untuk menyembunyikan account-text dan forgot-password saat tampilan admin */
+.admin .account-text,
+.admin .forgot-password {
+    display: none;
+}

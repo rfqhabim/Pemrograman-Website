@@ -1,0 +1,304 @@
+body {
+    font-size: small;
+    font-family: "Poppins", sans-serif;
+    margin: 0; padding: 0;
+}
+
+/* Side Bar*/
+
+.sidebar {
+    background-image: url(image/background.png);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*overflow-y: auto;*/
+    position: fixed;
+}
+
+.sidebar .button{
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 25px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.sidebar .button:hover{
+    background-color: #b5b0b0;
+    color: black;
+}
+
+.logo img{
+    display: flex;
+    justify-content: center;
+    margin: 55px auto;
+    width: 80px;
+}
+
+.user-photo {
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.balance {
+    background-color: rgba(120, 117, 117, 0.7);
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    width: fit-content;
+}
+
+.balance-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.balance-amount {
+    margin-left: 80px;
+}
+
+
+.boxSaldo form input{
+    border-radius:5px;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 12px;
+    width: 100%;
+    outline: none;
+}
+.boxSaldo form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #2f0331;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+.boxSaldo form button:hover{
+    background-color: #000000;
+}
+.navigation{
+    margin-top: 40px;
+}
+
+
+.navigation-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.navigation-icon {
+    margin-right: 15px;
+    font-size: 22px;
+}
+.sidebar form{
+    background-color: rgba(120, 117, 117, 0.7);
+    margin-top: 30px;
+    border-radius: 25px;
+    width: 245px;
+    padding: 5px 0;
+}
+
+
+.sidebar form input{
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.sidebar form input::placeholder{
+    color: rgba(120, 117, 117, 0.7);
+    text-align: center;
+}
+
+.sidebar form button{
+    background-color: #2F0331;
+    color: white;;
+    border-style: none;
+    font-size: 13px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 120px;
+}
+
+.sidebar form button:hover{
+    background-color: black;
+}
+
+.content {
+    margin: 0px 15px 0px 320px;
+    padding: 20px;
+}
+
+/* Halaman Utama */
+
+.welcome-text {
+    font-weight: 500;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(20, 18, 18, 0.4);
+    padding: 15px 40px;
+    margin-top: 20px;
+}
+
+.box-title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.box-content {
+    margin-top: 10px;
+}
+
+.box-text {
+    margin-top: 5px;
+}
+
+.box-button {
+    background-color: #2F0331;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight:normal;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.box-button:hover{
+    background-color: #b5b0b0;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0px 15px 0px;
+}
+
+.order-table th,
+.order-table td {
+    border: 2px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.order-table th {
+    background-color: #2F0331;
+    color: #fff;
+}
+
+
+.box-row { /*button ubah terletak disebelah kanan akun dan alamat saya*/
+    display: flex;
+    align-items: center;
+}
+
+/* Pop Up */
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*z-index: 9999;*/
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    width: 25%;
+}
+
+.popup-title {
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.popup-form {
+    margin-bottom: 5px;
+}
+
+.popup-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.popup-form input[type="text"] {
+    width: 94%;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-color: #C5C3C3;
+}
+
+.popup-form .btn-save {
+    background-color: #2F0331;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+}

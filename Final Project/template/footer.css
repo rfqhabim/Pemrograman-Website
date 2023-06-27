@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.bgfooter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-image: url('image/backgroundfooter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgfooter .box3{
+    display: flex;
+    width: 100%;
+}
+.bgfooter .box3 img{
+    width: 100px;
+    height: auto;
+    margin: 28px;
+    margin-left: 75%;
+}
+
+.bgfooter .box4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+}
+
+.bgfooter .box4 .sosmed{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 5%;
+}
+
+.bgfooter .box4 .sosmed a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.bgfooter .box4 .sosmed a:hover{
+    color: #b5b0b0;
+}
+
+
+footer{
+    padding-right: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+footer p{
+    font-size: 20px;
+}

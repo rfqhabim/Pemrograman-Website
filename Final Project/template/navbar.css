@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.bgheader{
+    background-color: black;
+}
+
+header{
+    background-image: url('image/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header p{
+    padding: 20px;
+    font-size: 24px;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding: 0 40px;
+}
+
+.bar .gambar{
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.bar .gambar img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.bar .tombol{
+    display: flex;
+    justify-content: end;
+    float: right;
+    width: 100%;
+    gap: 30px;
+    font-size: 18px;
+    margin: 20px;
+    /* margin-left: 17%; */
+    font-family: 'Inter', sans-serif;
+}
+
+.bar .tombol a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.bar .tombol a:hover{
+    color: #b5b0b0;
+}

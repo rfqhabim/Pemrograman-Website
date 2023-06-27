@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+    background-image: url('../img/sidebarbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar .logo {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .profile-preview {
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+.sidebar .profile-preview img {
+    width: 130px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.sidebar .list-link {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar .list-link ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.sidebar .list-link ul li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sidebar .list-link ul li.active {
+    background: #B5B0B0;
+    border-radius: 20px;
+}
+
+.sidebar .list-link ul li a {
+    text-decoration: none;
+    width: 70%;
+    color: #000000;
+}
+
+.sidebar .list-link ul li a:hover {
+    color: #616161;
+}
+
+.sidebar .list-link ul li i {
+    margin: 0 10px 0 10px;
+}
+
+.sidebar .logout {
+    margin-top: 70px;
+    margin-bottom: 9px;
+}
+
+.sidebar .logout a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar .logout a:hover {
+    color: #616161;
+}
+
+/*report user*/
+.container-main{
+    margin: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-main .update1{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: auto;
+   justify-content: space-evenly;
+   gap: 5%;
+}
+
+.container-main .update1 .gmbr-konfr {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+}
+
+.container-main .update1 .gmbr-konfr .ganti-gambar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    width: auto;
+}
+
+.container-main .update1 .gmbr-konfr button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #0C697A;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.container-main .update1 .gmbr-konfr .ganti-gambar p{
+    margin-top: 10px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+.container-main .update1 .gmbr-konfr .ganti-gambar p:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.container-main .update1 .gmbr-konfr .ganti-gambar img {
+    margin: 18px;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* tesd */
+
+.container-main .update1 .add2 {
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.container-main .update1 .add2 i {
+    margin: 15px;
+    color: #000;
+}
+
+.container-main .update1 .add2 input {
+    margin-left: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #000000;
+    border: none;
+    font-size: 16px;
+    width: 90%;
+    outline: none;
+}
+.container-main .update1 .add2 p {
+    margin-left: 10px;
+}
+
+.container-main .update1 .add3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 235px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.container-main .update1 .add3 i {
+    margin: 15px;
+    color: #000;
+}
+
+.container-main .update1 .add3 textarea {
+    color: #000;
+    border: none;
+    font-size: 16px;
+    margin: 10px 8px;
+    width: 90%;
+    height: 90%;
+    outline: none;
+}
+/* df */
+
+
+
+.container-main .update1 .isi-update {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 20px;
+}
+
+.container-main .update1 .isi-update .update {
+    display: flex;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #000000;
+    background-color: white;
+}
+
+.container-main .update1 .isi-update .update i{
+    margin: 13px;
+    margin-left: 20px;
+}
+
+.container-main .update1 .isi-update .update p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container-main .update1 .isi-update .update-text {
+    display: flex;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    border: 1px solid #000000;
+    background-color: white;
+}
+
+.container-main .update1 .isi-update .update-text i{
+    margin: 13px;
+    margin-left: 20px;
+}
+
+.container-main .update1 .add2 select {
+    margin-left: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: black;
+    border: none;
+    font-size: 16px;
+    width: 90%;
+    outline: none;
+}

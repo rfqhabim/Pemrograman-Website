@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+    background-image: url('../img/sidebarbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar .logo {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .profile-preview {
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+.sidebar .profile-preview img {
+    width: 130px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.sidebar .list-link {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar .list-link ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.sidebar .list-link ul li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sidebar .list-link ul li.active {
+    background: #B5B0B0;
+    border-radius: 20px;
+}
+
+.sidebar .list-link ul li a {
+    text-decoration: none;
+    width: 70%;
+    color: #000000;
+}
+
+.sidebar .list-link ul li a:hover {
+    color: #616161;
+}
+
+.sidebar .list-link ul li i {
+    margin: 0 10px 0 10px;
+}
+
+.sidebar .logout {
+    margin-top: 70px;
+    margin-bottom: 9px;
+}
+
+.sidebar .logout a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar .logout a:hover {
+    color: #616161;
+}
+
+/*tambah produk*/
+.add-product {
+    margin: 0px 50px 50px 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-product h1{
+    font-size: 33px;
+}
+
+.add-product .add1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+.add-product .add1 .add-gambar-konfr {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+}
+
+.add-product .add1 .add-gambar-konfr .button-choice button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 230px;
+    border-radius: 10px;
+    background-color: #0C697A;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.add-product .add1 .add-gambar-konfr .button-choice button:hover{
+    background-color: white;
+    color: black;
+}
+
+.add-product .add1 .add-gambar-konfr .add-gambar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background-color: white;
+    height: 300px;
+    width: 230px;
+    justify-content: center;
+}
+.add-product .add1 .add-gambar-konfr .add-gambar label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-product .add1 .add-gambar-konfr .add-gambar label i {
+    
+    text-align: center;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.add-product .add1 .add-gambar-konfr .add-gambar input{
+    display: none;
+}
+
+.add-product .add1 .add-gambar-konfr .add-gambar p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.add-product .add1 .addPrdct {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 20px;
+}
+
+.add-product .add1 .addPrdct .add2 {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.add-product .add1 .addPrdct .add2 i {
+    margin: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.add-product .add1 .addPrdct .add2 input {
+    margin-left: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 16px;
+    width: 90%;
+    outline: none;
+}
+
+.add-product .add1 .addPrdct .add3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 235px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.add-product .add1 .addPrdct .add3 i {
+    margin: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.add-product .add1 .addPrdct .add3 textarea {
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 16px;
+    margin: 10px 8px;
+    width: 90%;
+    height: 90%;
+    outline: none;
+}
+
+.add-product .add1 .addPrdct .add2 select {
+    margin-left: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 16px;
+    width: 90%;
+    outline: none;
+}
